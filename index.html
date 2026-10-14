@@ -1,9 +1,267 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-</body>
 
+    <!-- Header -->
+    <header class="header">
+        <h1>🌐 HTML Learning Project</h1>
+        <p>Master the Building Blocks of the Web</p>
+    </header>
+
+    <main>
+
+        <!-- What is HTML -->
+        <section class="container">
+            <h2>🚀 What is HTML?</h2>
+
+            <p>
+                <b>HTML (HyperText Markup Language)</b> is the standard markup
+                language for creating web pages. Think of it as the skeleton
+                or foundation of every website you visit.
+            </p>
+
+            <div class="key-points">
+                <h3>Key Points:</h3>
+                <ul>
+                    <li><b>HyperText:</b> Text with links to other texts</li>
+                    <li><b>Markup:</b> A way to annotate text to show structure and meaning</li>
+                    <li><b>Language:</b> A set of rules and syntax for creating web content</li>
+                </ul>
+            </div>
+
+            <h3>📘 How HTML Works</h3>
+
+            <p>
+                HTML uses <b>tags</b> to define elements. Tags are keywords
+                surrounded by angle brackets like
+                <code>&lt;tagname&gt;</code>. Most tags come in pairs:
+            </p>
+
+            <div class="code-box">
+                <code>&lt;tagname&gt;Content goes here&lt;/tagname&gt;
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
+            </div>
+        </section>
+
+        <!-- Basic HTML Structure -->
+        <section class="container">
+            <h2>📄 Basic HTML Structure</h2>
+
+            <p>Every HTML document follows this basic structure:</p>
+
+            <div class="code-box">
+                <code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is my first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+            </div>
+
+            <div class="info-box">
+                <h3>Structure Breakdown:</h3>
+                <ul>
+                    <li><b>&lt;!DOCTYPE html&gt;</b> - Tells the browser this is HTML5</li>
+                    <li><b>&lt;html&gt;</b> - Root element of the page</li>
+                    <li><b>&lt;head&gt;</b> - Contains metadata (not visible on page)</li>
+                    <li><b>&lt;body&gt;</b> - Contains visible content</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Essential HTML Tags -->
+        <section class="container">
+            <h2>🏷️ Essential HTML Tags</h2>
+
+            <table class="html-table">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Purpose</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><code>&lt;h1&gt; - &lt;h6&gt;</code></td>
+                        <td>Headings (largest to smallest)</td>
+                        <td><code>&lt;h1&gt;Main Title&lt;/h1&gt;</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;p&gt;</code></td>
+                        <td>Paragraphs</td>
+                        <td><code>&lt;p&gt;This is text&lt;/p&gt;</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;a&gt;</code></td>
+                        <td>Links</td>
+                        <td><code>&lt;a href="url"&gt;Link text&lt;/a&gt;</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;img&gt;</code></td>
+                        <td>Images</td>
+                        <td><code>&lt;img src="image.jpg" alt="Description"&gt;</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;div&gt;</code></td>
+                        <td>Container/section</td>
+                        <td><code>&lt;div&gt;Content here&lt;/div&gt;</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</code></td>
+                        <td>Lists</td>
+                        <td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Live Examples -->
+        <section class="container examples">
+            <h2>🎯 Live Examples</h2>
+
+            <h1>This is an H1 heading</h1>
+            <h2>This is an H2 heading</h2>
+            <h3>This is an H3 heading</h3>
+
+            <p>
+                This is a paragraph with
+                <b>bold text</b> and
+                <i>italic text</i>.
+            </p>
+
+            <p>Here's <a href="https://google.com">sample link</a>.</p>
+
+            <b>Unordered List:</b>
+            <ul>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ul>
+
+            <b>Ordered List:</b>
+            <ol>
+                <li>Step one</li>
+                <li>Step two</li>
+                <li>Step three</li>
+            </ol>
+        </section>
+
+        <!-- HTML Forms -->
+        <section class="container forms">
+            <h2>📝 HTML Forms</h2>
+
+            <p>Forms allow users to input data.</p>
+
+            <div class="code-box">
+                <code>&lt;form&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+
+    &lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code>
+            </div>
+
+            <h3>Example Form:</h3>
+
+            <form action="#" method="get">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="question">Question</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="support">Support</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- HTML Attributes -->
+        <section class="container">
+            <h2>🎨 HTML Attributes</h2>
+
+            <p>
+                Attributes provide additional information about HTML elements.
+                They are written inside the opening tag.
+            </p>
+
+            <div class="code-box">
+                <code>&lt;!-- Common Attributes --&gt;
+
+&lt;img src="photo.jpg"
+     alt="A beautiful sunset"
+     width="300"
+     height="200"&gt;
+
+&lt;a href="https://example.com"
+   target="_blank"
+   title="Visit Example"&gt;
+    Click here
+&lt;/a&gt;
+
+&lt;div class="container"
+     id="main-content"
+     style="color: blue;"&gt;
+    Content
+&lt;/div&gt;</code>
+            </div>
+
+            <div class="info-box">
+                <h3>Important Attributes:</h3>
+
+                <ul>
+                    <li><b>id</b> - Unique identifier for an element</li>
+                    <li><b>class</b> - Groups elements for styling</li>
+                    <li><b>src</b> - Source file for images, videos, etc.</li>
+                    <li><b>href</b> - URL for links</li>
+                    <li><b>alt</b> - Alternative text for images</li>
+                    <li><b>style</b> - Inline CSS styling</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>HTML Learning Project | Keep Learning and Keep Building 🚀</p>
+    </footer>
+
+</body>
 </html>
