@@ -1,5 +1,3 @@
-
-/* Main Layout */
 * {
     box-sizing: border-box;
 }
@@ -9,7 +7,6 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     color: #334155;
-
     background: linear-gradient(
         110deg,
         #7226FF 0%,
@@ -17,7 +14,6 @@ body {
         #F0A8F2 70%,
         #F8DFF5 100%
     );
-
     background-attachment: fixed;
     min-height: 100vh;
 }
@@ -49,7 +45,6 @@ body {
         #c5eaf5 80%,
         #a5f3f0 100%
     );
-
     margin: 20px auto;
     padding: 30px;
     border-radius: 15px;
@@ -90,7 +85,6 @@ body {
     line-height: 1.5;
 }
 
-/* Code Example */
 .code-box {
     margin: 12px 0;
     padding: 16px;
@@ -108,7 +102,6 @@ body {
     white-space: pre;
 }
 
-/* Table */
 .html-table {
     width: 100%;
     border-collapse: collapse;
@@ -131,15 +124,19 @@ body {
     overflow-wrap: anywhere;
 }
 
-.html-table tr:nth-child(even) {
+.html-table tbody tr:nth-child(even) {
     background: #f5f7fa;
+}
+
+.html-table tbody tr:hover {
+    background-color: #dbeafe;
+    transition: background-color 0.2s ease;
 }
 
 .html-table code {
     font-size: 11px;
 }
 
-/* Form */
 .forms form {
     display: flex;
     flex-direction: column;
@@ -156,6 +153,14 @@ body {
     font: inherit;
 }
 
+.forms input:focus,
+.forms select:focus,
+.forms textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
 .forms button {
     padding: 10px 18px;
     border: none;
@@ -163,6 +168,7 @@ body {
     background: #3498db;
     color: white;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .forms button:hover {
@@ -178,10 +184,13 @@ body {
     font-size: 12px;
 }
 
-/* Mobile */
 @media (max-width: 600px) {
     body {
         padding: 0 10px 20px;
+    }
+
+    .header {
+        padding: 25px 10px;
     }
 
     .header h1 {
@@ -190,6 +199,11 @@ body {
 
     .container {
         padding: 18px 14px;
+        max-width: 100%;
+    }
+
+    .container h2 {
+        font-size: 19px;
     }
 
     .html-table {
@@ -200,21 +214,12 @@ body {
     .html-table td {
         padding: 7px 5px;
     }
+
+    .code-box {
+        padding: 12px;
+    }
+
+    .code-box code {
+        font-size: 11px;
+    }
 }
-    
-    tbody tr:hover {
-        background-color: #dbeafe;
-        transition: background-color 0.2s ease;
-    }
-
-    /* Membuat tabel lebih nyaman dibaca */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    th,
-    td {
-        padding: 12px 15px;
-        text-align: left;
-    }
